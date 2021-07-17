@@ -1,0 +1,229 @@
+<nav id="navbar">
+
+  <header>
+    <div id="titulo-nav">
+      <p>Documentacion HTML</p>
+    </div>
+  </header>
+  <div id="a-nav">
+    <a class="nav-link" href="#Introduccion">Introduccion</a>
+    <a class="nav-link" href="#Empezando_con_HTML">Empezando con HTML</a>
+    <a class="nav-link" href="#Fundamentos_de_HTML">Fundamentos de HTML</a>
+    <a class="nav-link" href="#Documentos_y_estructura_sitio_web">Documentos y estructura sitio web</a>
+    <a class="nav-link" href="#Insertar_imagenes,video_y_links">Insertar imagenes,video y links</a>
+    <a class="nav-link" href="#Responsive_Images">Responsive Images</a>
+    <a class="nav-link" href="#Tablas">Tablas</a>
+    <a class="nav-link" href="#Referencia">Referencia</a>
+
+  </div>
+</nav>
+
+<main id="main-doc">
+
+  <section id="Introduccion" class="main-section">
+    <header>Introduccion</header>
+    <article>
+
+      <p>HTML ("Hypertext Markup Language") no es un lenguaje de programación. Es un lenguaje de marcado que le dice a los navegadores web cómo estructurar las páginas web que estás visitando. Puede ser tan complejo o tan simple como desee el desarrollador web. El HTML consiste en una serie de elementos, que puedes utilizar para encerrar, delimitar o marcar diferentes partes del contenido para hacer que aparezcan de una cierta manera, o actúen de determinada forma. Las etiquetas que delimitan un fragmento de contenido pueden hacer que dicho contenido enlace con otra página, ponga una palabra en cursiva, etcétera.un ejemplo de etiqueta es el siguiente:
+        <img src="https://media.prod.mdn.mozit.cloud/attachments/2015/11/10/11913/70fcaca87ee6a6e47028508801bd5ddd/htmlexp.png" alt="explicacion de una etiqueta html">
+      </p>
+
+      <p>
+        Las principales partes de nuestro elemento son:
+      <ul>
+        <li>La etiqueta de apertura: consiste en el nombre del elemento (en este caso, p), encerrado entre paréntesis angulares de apertura y cierre. Esta etiqueta de apertura marca dónde comienza el elemento o comienza a tener efecto. En este ejemplo, precede al comienzo del texto del párrafo.</li>
+        <li>El contenido: Este es el contenido del elemento. En este ejemplo, es el texto del párrafo.</li>
+        <li>La etiqueta de cierre: Es lo mismo que la etiqueta de apertura, excepto que incluye una barra diagonal antes del nombre del elemento. Esto indica dónde termina el elemento; en este caso, dónde finaliza el párrafo. No incluir una etiqueta de cierre es un error común de principiante, y puede conducir a extraños resultados</li>
+      </ul>
+      </p>
+    </article>
+
+  </section>
+
+  <section id="Empezando_con_HTML" class="main-section">
+    <header>Empezando con HTML</header>
+    <article>
+
+      <p>Hay dos categorías importantes de elementos en HTML — Estos son los elementos de bloque y los elementos en línea.</p>
+
+      <ul>
+        <li>Los elementos de bloque forman un bloque visible en la página. Aparecerán en una línea nueva después de cualquier contenido anterior. Cualquier contenido que vaya después también aparecerá en una línea nueva. Los elementos a nivel de bloque suelen ser elementos estructurales de la página. Por ejemplo, un elemento a nivel de bloque puede representar encabezados, párrafos, listas, menús de navegación o pies de página. Un elemento a nivel de bloque no estaría anidado dentro de un elemento en línea, pero podría estar anidado dentro de otro elemento a nivel de bloque.</li>
+        <li>Los elementos en línea están contenidos dentro de elementos de bloque y delimitan solo pequeñas partes del contenido del documento; (no párrafos enteros o agrupaciones de contenido) Un elemento en línea no hará que aparezca una nueva línea en el documento. Suele utilizarse con texto. Por ejemplo es el caso de un elemento &lta&gt (hipervínculo) o elementos de énfasis como &ltem&gt o &ltstrong&gt. </li>
+      </ul>
+      <p>Los elementos también pueden tener atributos. Los atributos tienen este aspecto:</p>
+
+      <img src="https://media.prod.mdn.mozit.cloud/attachments/2015/11/10/11915/fc2b734f92bdd791bc121e93094688f3/htmlatributos.png" alt="grafico de un atributo">
+
+      <p>Los atributos contienen información extra sobre el elemento que no se mostrará en el contenido. En este caso, el atributo class asigna al elemento un identificador que se puede utilizar para dotarlo de información de estilo.
+
+        Un atributo debería tener:</p>
+      <ul>
+        <li>Un espacio entre este y el nombre del elemento. (Para un elemento con más de un atributo, los atributos también deben estar separados por espacios).
+        </li>
+        <li>El nombre del atributo, seguido por un signo igual.</li>
+        <li>Un valor del atributo, rodeado de comillas de apertura y cierre.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="Fundamentos_de_HTML" class="main-section">
+    <header>Fundamentos de HTML</header>
+    <article>
+      <p>Los elementos HTML no son muy útiles por sí mismos. Ahora veremos cómo combinar los elementos individuales para formar una página HTML completa:</p>
+      <code>&lthtml&gt
+        &lthead&gt<br>
+        &ltmeta charset="utf-8"&gt<br>
+        &lttitle&gtMi página de prueba&lt/title&gt<br>
+        &lt/head&gt<br>
+        &ltbody&gt<br>
+        &ltp&gtEsta es mi página&lt/p&gt<br>
+        &lt/body&gt<br>
+        &lt/html&gt</code>
+      <br>
+
+      <ol>
+        <li>&lt!DOCTYPE html&gt: El elemento doctype. En sus inicios, cuando el HTML llevaba poco tiempo (alrededor de 1991-1992), los doctypes servían como enlaces al conjunto de reglas que la página HTML debía seguir para que fuera considerado buen HTML. En la actualidad se ignora y se considera un legado histórico que hay que incluir para que todo funcione correctamente. DOCTYPE es la secuencia de caracteres más corta que se acepta como elemento doctype válido. Eso es lo único que realmente necesitas saber. </li>
+
+        <li>El elemento &lthtml&gt. Este elemento envuelve todo el contenido de la página. A veces se lo conoce como el elemento raíz.</li>
+
+        <li> El elemento &lthead&gt (cabecera). Este elemento actúa como contenedor para todos los parámetros que quieras incluir en el documento HTML que no serán visibles a los visitantes de la página. Incluye cosas como palabras clave y la descripción de la página que quieras mostrar en los resultados de búsqueda, así como la hoja de estilo para formatear nuestro contenido, declaraciones de codificación de caracteres y más. Aprenderás más acerca de esto en el siguiente artículo de la serie.</li>
+
+        <li>&ltmeta charset="utf-8"&gt: Este elemento establece que tu documento HTML usará la codificación UTF-8, que incluye la gran mayoría de caracteres de todos los idiomas humanos escritos. En resumen: puede gestionar cualquier contenido textual que pongas en tu documento. No hay razón para no configurar este valor y te puede ayudar a evitar problemas más adelante.</li>
+
+        <li>: El elemento &lttitle&gt. Este establece el título de la página, que es el título que aparece en la pestaña del navegador en la que se carga la página. El título de la página también se utiliza para describir la página cuando se marca como favorita.</li>
+
+        <li>El elemento &ltbody&gt. Contiene todo el contenido que quieres mostrar a los usuarios cuando visitan tu página, ya sea texto, imágenes, vídeos, juegos, pistas de audio reproducibles o cualquier otra cosa.</li>
+      </ol>
+
+    </article>
+  </section>
+
+  <section id="Documentos_y_estructura_sitio_web" class="main-section">
+    <header>Documentos y estructura sitio web</header>
+    <article>
+      <p>
+        El elemento head de un documento HTML es la parte que no se muestra en el navegador cuando se carga la página. Contiene información como el título (&lttitle&gt) de la página, enlaces al CSS (si quieres aplicar estilo a tu contenido HTML con CSS), enlaces para personalizar favicon, y otros metadatos (datos sobre el HTML, como quién lo escribió y palabras claves importantes que describen el documento). En este artículo abarcaremos todo esto y más, para darte bases sólidas en el manejo del marcado y otro código que debería estar presente en tu cabecera.<br><br>
+        La cabecera HTML es el contenido del elemento &lthead&gt a diferencia del contenido del elemento &ltbody&gt (que sí se muestra en la página cuando se carga en el navegador), el contenido de la cabecera no se muestra en la página. Por el contrario, la función de la cabecera es contener los metadatos del documento. En el ejemplo anterior, la cabecera es bastante reducida:
+      </p>
+
+      <p>Ya hemos visto el elemento &lttitle&gt en acción — se puede usar para poner un título al documento. Sin embargo, esto se puede confundir con el elemento &lth1&gt, que se utiliza para poner un encabezado de nivel superior al cuerpo de tu contenido - esto también se conoce como el título de la página. ¡Pero son cosas diferentes!</p>
+      <ul>
+        <li>El elemento &lth1&gt aparece en la página cuando se carga en el navegador — en general debería haber uno solo por página, para especificar el título del contenido de tu página (el título de tu historia, el título de la noticia, o de lo que sea apropiado según el uso que le des).</li>
+        <li>El elemento &lttitle&gt es un metadato que representa el título de todo el documento HTML (no del contenido del documento).</li>
+      </ul>
+
+      <p>Prácticamente todos los sitios web usan CSS para darles un buen aspecto y JavaScript para añadir funcionalidades interactivas, como reproductores de vídeo, mapas, juegos y demás. La manera más habitual de añadir CSS y JavaScript a una página web es con los elementos &ltlink&gt y el elemento &ltscript&gt, respectivamente.<br><br>
+        El elemento &ltlink&gt siempre debe ir dentro del &ltheader&gt de tu documento. Este toma dos atributos, rel="stylesheet", que indica que es la hoja de estilo del documento, y href, que contiene la ruta al archivo de la hoja de estilo:<br><br>
+        <code>&ltlink rel="stylesheet" href="my-css-file.css"&gt</code>
+      </p>
+    </article>
+
+  </section>
+
+  <section id="Insertar_imagenes,video_y_links" class="main-section">
+    <header>Insertar imagenes,video y links</header>
+
+    <article>
+      <p>Al principio, la web solo era texto y resultaba más bien aburrido. Afortunadamente, no pasó mucho tiempo antes de que se añadiera la capacidad de insertar imágenes (y otros tipos de contenido más interesantes) en las páginas web. Hay otros tipos de elementos multimedia que tener en cuenta, pero es lógico comenzar con el humilde elemento &ltimg&gt utilizado para insertar una imagen simple en una página web.</p>
+      <p>Para poner una imagen simple en una página web, utilizamos el elemento &ltimg&gt. Se trata de un elemento vacío (lo que significa que no contiene texto o etiqueta de cierre) que requiere de por lo menos de un atributo para ser utilizado: src (a veces denominado por su nombre completo, source). El atributo src contiene una ruta que apunta a la imagen que quieres poner en la página, que puede ser una URL relativa o absoluta, de la misma forma que el elemento &lta&gt contiene los valores del atributo href.</p>
+      <code>&ltimg src="dinosaur.jpg"&gt</code>
+      <p>Si la imagen estaba en el subdirectorio images, que estaba en el mismo directorio que la página HTML (lo que Google recomienda con fines de indización y posicionamiento en buscadores SEO), entonces deberías incrustar la imagen así:</p>
+      <code>&ltimg src="images/dinosaur.jpg"&gt</code>
+      <p>El elemento &ltvideo&gt nos permite incrustar video fácilmente. Un ejemplo muy simple luce como lo siguiente:</p>
+
+      <code>&ltvideo src="rabbit320.webm" controls&gt
+        &ltp&gtTu navegador no soporta HTML5 video. Aquí está el &lta href="rabbit320.webm"&gtenlace del video&lt/a&gt&lt/video&gt</code><br><br>
+      <p>Las características a notar son:</p>
+      <ul>
+        <li>src: De la misma manera que para el elemento &ltimg&gt, el atributo src (source) contiene una ruta al video que deseas incrustar. Funciona de la misma manera.</li>
+        <li>controls: Los usuarios deben ser capaces de controlar la reproducción de video y audio (esto es especialmente crítico en personas que padecen epilepsia). Se debe utilizar el atributo controls para incluir la interfaz de control del browser, o construir la nuestra utilizando la JavaScript API apropiada. Como mínimo la interfaz debe incluir una manera de empezar y terminar la reproducción, y ajustar el volumen.</li>
+      </ul>
+
+    </article>
+
+  </section>
+
+  <section id="Responsive_Images" class="main-section">
+    <header>Responsive Images</header>
+    <article>
+      <p>Las imágenes adaptables (responsive) son aquellas que funcionan bien en dispositivos con una amplia diferencia de tamaño de pantallas, resoluciones y otras tantas características — y observar qué herramientas proporciona HTML para ayudar a implementarlas. Esto ayuda a mejorar el rendimiento en diferentes dispositivos.<br><br>
+        Examinemos un escenario típico. Un sitio web típico puede contener una imagen de encabezado y algunas imágenes de contenido debajo del encabezado. Es probable que la imagen del encabezado abarque todo el ancho del encabezado y la imagen del contenido quepa en algún lugar dentro de la columna de contenido. He aquí un ejemplo sencillo:</p>
+
+      <img src="https://media.prod.mdn.mozit.cloud/attachments/2016/03/23/12940/514a8ffdd1ff36f49de78481de1dcea8/picture-element-wide.png" alt="imagen aleatoria para ejemplo">
+
+      <ul>
+        <li>El contenido del body se ha ajustado a un ancho máximo de 1200 píxeles - en pantallas por encima de ese ancho, el cuerpo permanece a 1200px y se centra en el espacio disponible. En pantallas por debajo de ese ancho, el cuerpo permanecerá al 100% del ancho de la ventana.</li>
+        <li>La imagen del encabezado se ha configurado para que su centro siempre permanezca en el centro del encabezado, sin importar el ancho que tenga el encabezado. Por lo tanto, si el sitio se visualiza en una pantalla más estrecha, aún se puede ver el detalle importante en el centro de la imagen (las personas) y el exceso se pierde en ambos lados. Tiene 200px de alto.</li>
+        <li>Las imágenes de contenido se han configurado de modo que si el elemento body se vuelve más pequeño que la imagen, las imágenes comienzan a encogerse para permanecer siempre dentro del body, en lugar de desbordarlo.</li>
+      </ul>
+      <p>Sin embargo, surgen problemas cuando comienza a ver el sitio en un dispositivo de pantalla estrecha — el encabezado de abajo está bien, pero empieza a ocupar gran parte de la altura de la pantalla de un dispositivo móvil. ¡A este tamaño es difícil ver a las personas que aparecen en la foto!</p>
+      <img src="https://media.prod.mdn.mozit.cloud/attachments/2016/03/23/12936/10fe5c727f075b246e9fb463bd582298/non-responsive-narrow.png" alt="ejemplo de imagen adaptable">
+
+      <p>Una mejora sería mostrar una versión recortada de la imagen que muestra los detalles importantes de la imagen cuando el sitio se ve en una pantalla estrecha. Se podría mostrar una segunda imagen recortada para un dispositivo de pantalla de ancho medio, como una tableta. A esto se le conoce comúnmente como el problema de cambio de resolución.</p>
+
+    </article>
+  </section>
+
+  <section id="Tablas" class="main-section">
+    <header>Tablas</header>
+    <article>
+      <p>Una tarea muy común en HTML es la estructuración de datos, y para esto hay múltiples elementos y atributos. Esto unido a un poco de CSS, hace que en HTML sea sencillo mostrar tablas con información sobre tu horario escolar, los horarios de una piscina local o las estadisticas de tu equipo de dinosaurios o fútbol preferido.<br><br>
+        Una tabla es un conjunto estructurado de datos distribuidos en filas y columnas (datos tabulados). Una tabla permite buscar con rapidez y facilidad valores entre diferentes tipos de datos que indiquen algún tipo de conexión. Por ejemplo, una persona y su edad, o un día de la semana o el horario de una piscina municipal.</p>
+
+      <img src="https://media.prod.mdn.mozit.cloud/attachments/2017/01/23/14583/5bad217718ecd469850752f2d97b1137/numbers-table.png" alt="imagen de una tabla en html">
+
+      <ol>
+        <li>En primer lugar, haz una copia local de blank-template.html y minimal-table.css en un directorio nuevo de tu ordenador.</li>
+        <li>El contenido de cada tabla está delimitado entre estas dos etiquetas: &lttable&gt&lt/table&gt. Añádelas al cuerpo de tu código HTML.</li>
+        <li>El contenedor más pequeño dentro de una tabla es una celda, que se crea con un elemento &lttd&gt ('td' significa 'table data', datos de tabla). Añade lo siguiente dentro de tus etiquetas de tabla:<br><br>
+          <code>&lttd&gtHola, soy tu primera celda.&lt/td&gt</code>
+        </li>
+        <li>Si quieres una fila de cuatro celdas, tienes que copiar estas etiquetas tres veces. Actualiza el contenido de la tabla para que se vea así: <code><br><br>
+            &lttd&gtHola, soy tu primera celda.&lt/td&gt<br>
+            &lttd&gtSoy tu segunda celda.&lt/td&gt<br>
+            &lttd&gtSoy tu tercera celda.&lt/td&gt<br>
+            &lttd&gtSoy tu cuarta celda.&lt/td&gt</code>
+        </li>
+      </ol>
+
+      <p>Como verás, las celdas no se colocan una debajo de la otra, sino que se alinean automáticamente entre sí en la misma fila. Cada elemento &lttd&gt crea una sola celda, y juntas forman la primera fila. Cada celda que agregamos hace crecer la fila.
+
+        Para detener el crecimiento de esta fila y comenzar a colocar las celdas posteriores en una segunda fila, necesitamos usar el elemento &lttr&gt ('tr' significa 'table raw', fila de tabla). Vamos a verlo en detalle.</p>
+
+      <ol>
+        <li>Coloca las cuatro celdas que has creado dentro de las etiquetas &lttr&gt, de esta forma: <br><br>
+          <code>&lttr&gt
+            &lttd&gtHola, soy tu primera celda.&lt/td&gt<br>
+            &lttd&gtSoy tu segunda celda.&lt/td&gt<br>
+            &lttd&gtSoy tu tercera celda.&lt/td&gt<br>
+            &lttd&gtSoy tu cuarta celda.&lt/td&gt<br>
+            &lt/tr&gt</code>
+        </li>
+        <li>Ahora que has hecho una fila, intenta hacer una o dos más: cada fila debe estar delimitada por un elemento &lttr&gt adicional, con cada celda contenida en un &lttd&gt.</li>
+        <p>Esto debería dar como resultado una tabla similar a la siguiente:</p>
+        <table>
+          <tr>
+            <td>Hola, soy tu primera celda.</td>
+            <td>Soy tu segunda celda.</td>
+            <td>Soy tu tercera celda.</td>
+            <td>Soy tu cuarta celda.</td>
+          </tr>
+          <tr>
+            <td>Hola, soy tu quinta celda.</td>
+            <td>Soy tu sexta celda.</td>
+            <td>Soy tu septima celda.</td>
+            <td>Soy tu octava celda.</td>
+          </tr>
+        </table>
+      </ol>
+
+    </article>
+  </section>
+  <section id="Referencia" class="main-section">
+    <header>Referencia</header>
+    <article>
+      <p> Toda la informacion,documentación e imagenes de esta pagina fueron tomados de <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_BLANK">MDN</a></p>
+    </article>
+  </section>
+
+</main>
